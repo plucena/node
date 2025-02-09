@@ -1,10 +1,12 @@
 
-class Product {
+export class Product {
 
-    title: string;
-price: number;
+public id: number;    
+public title: string;
+public price: number;
 
-constructor(t: string, p: number) {     
+constructor(id: number, t: string, p: number) { 
+this.id = id;    
 this.title = t;
 this.price = p;
 }
